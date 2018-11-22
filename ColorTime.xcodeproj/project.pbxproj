@@ -13,6 +13,11 @@
 		980CA1CE1F34E9B500845C55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980CA1CD1F34E9B500845C55 /* Assets.xcassets */; };
 		980CA1D11F34E9B500845C55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980CA1CF1F34E9B500845C55 /* LaunchScreen.storyboard */; };
 		980CA1DC1F34E9B500845C55 /* ColorTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CA1DB1F34E9B500845C55 /* ColorTimeUITests.swift */; };
+		980CA1E71F34EAAD00845C55 /* editClocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CA1E61F34EAAD00845C55 /* editClocksViewController.swift */; };
+		980CA1E91F34EB2D00845C55 /* colorTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CA1E81F34EB2D00845C55 /* colorTimeTests.swift */; };
+		980CA1EB1F34EB7600845C55 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CA1EA1F34EB7600845C55 /* AlarmTableViewCell.swift */; };
+		980CA1ED1F34EBA000845C55 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CA1EC1F34EBA000845C55 /* AlarmViewController.swift */; };
+		BF02CE462128478200D5DAEC /* Alarm-Clock Sound!!!.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF02CE452128478200D5DAEC /* Alarm-Clock Sound!!!.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,12 @@
 		980CA1D71F34E9B500845C55 /* ColorTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		980CA1DB1F34E9B500845C55 /* ColorTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTimeUITests.swift; sourceTree = "<group>"; };
 		980CA1DD1F34E9B500845C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		980CA1E61F34EAAD00845C55 /* editClocksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editClocksViewController.swift; sourceTree = "<group>"; };
+		980CA1E81F34EB2D00845C55 /* colorTimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colorTimeTests.swift; sourceTree = "<group>"; };
+		980CA1EA1F34EB7600845C55 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		980CA1EC1F34EBA000845C55 /* AlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		BF02CE452128478200D5DAEC /* Alarm-Clock Sound!!!.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Alarm-Clock Sound!!!.mp3"; path = "../../../Downloads/Alarm-Clock Sound!!!.mp3"; sourceTree = "<group>"; };
+		BF7B3BE0212776A500D8737F /* ColorTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColorTime.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +88,13 @@
 		980CA1C51F34E9B500845C55 /* ColorTime */ = {
 			isa = PBXGroup;
 			children = (
+				BF7B3BE0212776A500D8737F /* ColorTime.entitlements */,
 				980CA1C61F34E9B500845C55 /* AppDelegate.swift */,
+				980CA1EA1F34EB7600845C55 /* AlarmTableViewCell.swift */,
+				980CA1EC1F34EBA000845C55 /* AlarmViewController.swift */,
 				980CA1C81F34E9B500845C55 /* ViewController.swift */,
+				980CA1E61F34EAAD00845C55 /* editClocksViewController.swift */,
+				BF02CE452128478200D5DAEC /* Alarm-Clock Sound!!!.mp3 */,
 				980CA1CA1F34E9B500845C55 /* Main.storyboard */,
 				980CA1CD1F34E9B500845C55 /* Assets.xcassets */,
 				980CA1CF1F34E9B500845C55 /* LaunchScreen.storyboard */,
@@ -91,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				980CA1DB1F34E9B500845C55 /* ColorTimeUITests.swift */,
+				980CA1E81F34EB2D00845C55 /* colorTimeTests.swift */,
 				980CA1DD1F34E9B500845C55 /* Info.plist */,
 			);
 			path = ColorTimeUITests;
@@ -148,6 +165,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6H25GX37P8;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					980CA1D61F34E9B500845C55 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -181,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF02CE462128478200D5DAEC /* Alarm-Clock Sound!!!.mp3 in Resources */,
 				980CA1D11F34E9B500845C55 /* LaunchScreen.storyboard in Resources */,
 				980CA1CE1F34E9B500845C55 /* Assets.xcassets in Resources */,
 				980CA1CC1F34E9B500845C55 /* Main.storyboard in Resources */,
@@ -201,8 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980CA1ED1F34EBA000845C55 /* AlarmViewController.swift in Sources */,
 				980CA1C91F34E9B500845C55 /* ViewController.swift in Sources */,
+				980CA1E71F34EAAD00845C55 /* editClocksViewController.swift in Sources */,
 				980CA1C71F34E9B500845C55 /* AppDelegate.swift in Sources */,
+				980CA1EB1F34EB7600845C55 /* AlarmTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980CA1E91F34EB2D00845C55 /* colorTimeTests.swift in Sources */,
 				980CA1DC1F34E9B500845C55 /* ColorTimeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ColorTime/ColorTime.entitlements;
 				DEVELOPMENT_TEAM = 6H25GX37P8;
 				INFOPLIST_FILE = ColorTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -354,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ColorTime/ColorTime.entitlements;
 				DEVELOPMENT_TEAM = 6H25GX37P8;
 				INFOPLIST_FILE = ColorTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -410,6 +439,7 @@
 				980CA1E21F34E9B500845C55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		980CA1E31F34E9B500845C55 /* Build configuration list for PBXNativeTarget "ColorTimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +448,7 @@
 				980CA1E51F34E9B500845C55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
